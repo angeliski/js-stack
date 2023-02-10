@@ -20,7 +20,7 @@ Então, executar o _container_ do Docker Express que provê uma interface http p
 
 Para conectar via terminal nessa instância execute o comando:
 ```bash
-> docker run -it --link mongodb:mongo --rm mongo sh -c 'exec mongo "$MONGO_PORT_27017_TCP_ADDR:$MONGO_PORT_27017_TCP_PORT/test"'
+> docker run -it --link mongodb:mongo --rm mongo sh -c 'exec mongosh "$MONGO_PORT_27017_TCP_ADDR:$MONGO_PORT_27017_TCP_PORT/test"'
 ```
 
 
